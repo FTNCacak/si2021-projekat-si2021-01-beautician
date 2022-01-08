@@ -53,12 +53,10 @@ CREATE TABLE [dbo].[Order_Items]
     [ProductId] INT NOT NULL,
     [OrderId] INT NOT NULL, 
     [Quantity] INT NOT NULL,
+    CONSTRAINT pk_order_items PRIMARY KEY (ProductId, OrderId),
     CONSTRAINT fk_product FOREIGN KEY(ProductId) REFERENCES Products(ProductId),
     CONSTRAINT fk_order FOREIGN KEY(OrderId) REFERENCES Orders (OrderId)
 )
-
-
-
 
 CREATE TABLE [dbo].[Admins]
 (
