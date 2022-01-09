@@ -3,6 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Extensions.DependencyInjection;
+using Shared.Interfaces;
+using BeuticianBusiness;
+using BeuticianData;
 
 namespace BeuticianDesktop
 {
@@ -16,7 +20,25 @@ namespace BeuticianDesktop
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AdminLoginForm());
+
+            var services = new ServiceCollection();
+            ConfigureServices(services);
+
+            using (ServiceProvider serviceProvider = services.BuildServiceProvider())
+            {
+                var form = serviceProvider.GetRequiredService<AdminLoginForm>();
+                Application.Run(form);
+
+            }
+
+        }
+
+        private static void ConfigureServices(ServiceCollection services)
+        {
+            services.AddScoped<IAdminBusiness, AdminBusiness>();
+            services.AddScoped<IAdminRepository, AdminRepository>();
+
+            services.AddScoped<AdminLoginForm>();
         }
     }
 }
