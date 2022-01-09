@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace BeuticianDesktop
 {
-    public partial class Form1 : Form
+    public partial class AdminLoginForm : Form
     {
-        public Form1()
+        public AdminLoginForm()
         {
             InitializeComponent();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
