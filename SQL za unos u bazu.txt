@@ -39,7 +39,7 @@ VALUES('Micelarna voda za detoksikaciju i čišćenje kože lica Fresh Juice Lim
 INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
 VALUES('Lak za nokte 12ml - Choco Latte', 250, 120, 'Galaxy lakovi za nokte bazirani su na visokopigmentovanoj formuli i pružaju dugotrajnu boju. Dostupni su u raskošnoj paleti boja, od nežnih pastelnih, preko intenzivnih narandžastih i zavodljivih crvenih, pa sve do romantičnih ljubičastih tonova, kao i različitih neon, holografskih, gliter, metalik i šimer nijansi.', 3, 7);
 INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
-VALUES('Turpija za nokte GLX303 Masterclass 150/150', 135, 180 , ': Turpija Masterclass 150/150 za matiranje i oblikovanje nokta, izrađena od sunđera i abraziva. Sam dizajn mekane sunđer turpije čuva strukturu prirodnog nokta.', 3, 7);
+VALUES('Turpija za nokte GLX303 Masterclass 150/150', 135, 180 , 'Turpija Masterclass 150/150 za matiranje i oblikovanje nokta, izrađena od sunđera i abraziva. Sam dizajn mekane sunđer turpije čuva strukturu prirodnog nokta.', 3, 7);
 INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
 VALUES('Skidač laka sa acetonom 250ml', 335, 150 , 'Formula za efikasno, brzo i jednostavno uklanjanje laka sa acetonom. Pogodan za primenu kako na prirodnim tako i na nadograđenim noktima.', 3, 8);
 

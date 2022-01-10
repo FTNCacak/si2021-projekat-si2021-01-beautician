@@ -17,9 +17,17 @@ namespace BeuticianDesktop
     {
 
         private readonly IAdminBusiness adminBusiness;
-        public AdminLoginForm(IAdminBusiness adminBusiness)
+        private readonly ICategoryBusiness categoryBusiness;
+        private readonly IManufacturerBusiness manufacturerBusiness;
+        private readonly IProductBusiness productBusiness;
+
+
+        public AdminLoginForm(IAdminBusiness adminBusiness, ICategoryBusiness categoryBusiness, IManufacturerBusiness manufacturerBusiness, IProductBusiness productBusiness)
         {
             this.adminBusiness = adminBusiness;
+            this.categoryBusiness = categoryBusiness;
+            this.manufacturerBusiness = manufacturerBusiness;
+            this.productBusiness = productBusiness;
             InitializeComponent();
         }
 
@@ -40,7 +48,12 @@ namespace BeuticianDesktop
                 return;
             }
 
-            Thread thread = new Thread(() => OpenNewForm());
+
+            List<Product> products = productBusiness.GetProducts();
+            List<Category> categories = categoryBusiness.GetCategories();
+            List<Manufacturer> manufacturers = manufacturerBusiness.GetManufacturers();
+
+            Thread thread = new Thread(() => OpenNewForm(categoryBusiness, manufacturerBusiness, productBusiness, products, categories, manufacturers));
             thread.Start();
             this.Dispose();
 
@@ -51,9 +64,9 @@ namespace BeuticianDesktop
             labelError.Visible = false;
         }
 
-        private void OpenNewForm()
+        private void OpenNewForm(ICategoryBusiness categoryBusiness, IManufacturerBusiness manufacturerBusiness, IProductBusiness productBusiness, List<Product> products, List<Category> categories, List<Manufacturer> manufacturers)
         {
-            Application.Run(new AdminPanelForm());
+            Application.Run(new AdminPanelForm(categoryBusiness, manufacturerBusiness, productBusiness, products, categories, manufacturers));
         }
 
     }

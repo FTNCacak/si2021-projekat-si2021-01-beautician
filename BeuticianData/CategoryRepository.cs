@@ -64,7 +64,7 @@ namespace BeuticianData
 
                 sqlCommand.Connection = sqlConnection;
 
-                sqlCommand.CommandText = "UPDATE Categories SET Name=@Name, SET Description=@Description WHERE CategoryId=@CategoryId;";
+                sqlCommand.CommandText = "UPDATE Categories SET Name=@Name, Description=@Description WHERE CategoryId=@CategoryId;";
                 sqlCommand.Parameters.AddWithValue("@CategoryId", category.CategoryId);
                 sqlCommand.Parameters.AddWithValue("@Name", category.Name);
                 sqlCommand.Parameters.AddWithValue("@Description", category.Description);

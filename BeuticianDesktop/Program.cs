@@ -38,6 +38,15 @@ namespace BeuticianDesktop
             services.AddScoped<IAdminBusiness, AdminBusiness>();
             services.AddScoped<IAdminRepository, AdminRepository>();
 
+            services.AddScoped<ICategoryBusiness, CategoryBusiness>();
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            services.AddScoped<IManufacturerBusiness, ManufacturerBusiness>();
+            services.AddScoped<IManufacturerRepository, ManufacturerRepository>();
+
+            services.AddScoped<IProductBusiness, ProductBusiness>();
+            services.AddScoped<IProductRepository, ProductRepository>();
+
             services.AddScoped<AdminLoginForm>();
         }
     }
