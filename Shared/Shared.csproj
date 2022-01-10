@@ -58,6 +58,7 @@
   <ItemGroup>
     <Compile Include="Interfaces\IAdminBusiness.cs" />
     <Compile Include="Interfaces\IAdminRepository.cs" />
+    <Compile Include="Interfaces\ICategoryRepository.cs" />
     <Compile Include="Models\Admin.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\Customer.cs" />
