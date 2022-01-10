@@ -1,0 +1,67 @@
+INSERT INTO Categories(Name, Description) VALUES('Nega kose', 'Preparati namenjeni za negu kose.');
+INSERT INTO Categories(Name, Description) VALUES('Nega lica', 'Preparati namenjeni za negu lica.');
+INSERT INTO Categories(Name, Description) VALUES('Nega noktiju', 'Preparati namenjeni za negu noktiju.');
+INSERT INTO Categories(Name, Description) VALUES('Šminka', 'Preparati namenjeni za šminkanje.');
+INSERT INTO Categories(Name, Description) VALUES('Nega tela', 'Preparati namenjeni za negu tela.');
+
+
+INSERT INTO Manufacturers(Name) VALUES('L''Oreal Paris');
+INSERT INTO Manufacturers(Name) VALUES('Garnier');
+INSERT INTO Manufacturers(Name) VALUES('Keune');
+INSERT INTO Manufacturers(Name) VALUES('Revolution skincare London');
+INSERT INTO Manufacturers(Name) VALUES('CALA');
+INSERT INTO Manufacturers(Name) VALUES('Bielenda');
+INSERT INTO Manufacturers(Name) VALUES('Galaxy');
+INSERT INTO Manufacturers(Name) VALUES('Dieffetti');
+INSERT INTO Manufacturers(Name) VALUES('NYX Professional Makeup ');
+INSERT INTO Manufacturers(Name) VALUES('I heart revolution');
+INSERT INTO Manufacturers(Name) VALUES('Women''s Secret');
+INSERT INTO Manufacturers(Name) VALUES('Spa Natural');
+INSERT INTO Manufacturers(Name) VALUES('Lovea');
+
+
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId) 
+VALUES('Casting Creme Gloss Boja za kosu', 499.99, 50 , 'Casting Creme Gloss vam pruža optimalnu pokrivenost sedih vlasi i izuzetno sjajne odsjaje. Bogata nijansama, ona ponovo stvara blistavu boju, sa sjajnim i vidljivim odsjajima, za jako prirodan i dugotrajan rezultat.', 1, 1);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Botanic Therapy Coco & Macadamia šampon 400 ml', 450, 40 , 'Linija obogaćena kokosovim mlekom i uljem makadamije hrani kosu i čini je mekom, bez otežavanja. Rezultat je kosa intenzivno nahranjena, sjajna, meka na dodir i izgleda zdravo.', 1, 2);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Care Vital Nutrition regenerator za kosu 250ml', 580, 55 , 'Regenerator za kosu koja treba dodatnu negu. Aktivni sastojci hidratizuju unutrašnju strukturu dlake formirajući sloj oko oštećenih delova dlake. Kosa postaje glatka,mekana i sjajna.', 1, 3);
+
+
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Dnevna krema Protecting Boost 50ml', 1090, 100 , 'Protecting Boost kolekcija za dnevnu negu i hidrataciju kože lica sa zaštitnim faktorom. Krema je obogaćena niacinamidom koji reguliše lučenje sebuma i ujednačava teksturu kože lica.', 2, 4);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Sheet maska za negu i umirivanje lica sa esencijom Aloe Vera 23g', 176, 200 , 'Cala sheet maska za lice obogaćena ekstraktom aloje, vitaminima i aminokiselinama, neguje i umiruje kožu lica, održavajući njen prirodni balans.', 2, 5);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Micelarna voda za detoksikaciju i čišćenje kože lica Fresh Juice Lime 100ml', 260, 300 , 'Micelarna voda sa bioaktivnom citrusnom vodom dobijenom iz mediteranskog voća, sokom od limete i salicilnom kiselinom.', 2, 6);
+
+
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Lak za nokte 12ml - Choco Latte', 250, 120, 'Galaxy lakovi za nokte bazirani su na visokopigmentovanoj formuli i pružaju dugotrajnu boju. Dostupni su u raskošnoj paleti boja, od nežnih pastelnih, preko intenzivnih narandžastih i zavodljivih crvenih, pa sve do romantičnih ljubičastih tonova, kao i različitih neon, holografskih, gliter, metalik i šimer nijansi.', 3, 7);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Turpija za nokte GLX303 Masterclass 150/150', 135, 180 , ': Turpija Masterclass 150/150 za matiranje i oblikovanje nokta, izrađena od sunđera i abraziva. Sam dizajn mekane sunđer turpije čuva strukturu prirodnog nokta.', 3, 7);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Skidač laka sa acetonom 250ml', 335, 150 , 'Formula za efikasno, brzo i jednostavno uklanjanje laka sa acetonom. Pogodan za primenu kako na prirodnim tako i na nadograđenim noktima.', 3, 8);
+
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Karmin za usne Butter Lipstick BLS 4.5g', 750, 85 , 'Butter ruževi za usne u visokopigmentisanim nijansama imaju hidratantnu i laganu formulu koja neguje usne. U samo jednom potezu i bez lepljivog ostatka moguće je postići zavodljiv izgled usana koji se uklapa u svaki makeup.', 4, 9);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Paleta presovanih pigmenata za oči Tasty Coffee 22g', 1390, 50 , 'Tasty Coffee paleta presovanih pigmenata za oči inspirisana bojama i ukusima različitih vrsta kafe, sastavljena od 18 nijansi, 10 mat i 8 šimer finiša. U kombinaciji krem, čokoladnih i bronzanih tonova, pogodna je za kreiranje dnevnog izgleda u toplim zemljanim bojama, ali i za postizanje intezivnijeg izgleda tamnijih nijansi.', 4, 10);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Vodootporna maskara Worth the Hype Waterproof 7ml', 1060, 85 , 'Maskara za kreiranje dodatnog volumena i dužine trepavica. Vodootporna formula u intenzivno crnoj boji je ugodna za nošenje i lako se nadograđuje. Rezultat je vizuelno gušći i duži izgled trepavica, za dugotrajan efekat. Maskara je otporna na razmazivanje i ne rasipa se.', 4, 9);
+
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Eau Its Fresh Edt ženski parfem, 100ml', 2290, 65, 'Women''s Secret Eau Its Fresh Edt predstavlja novi parfem iz Womens Secret kolekcije parfema, koji se otvara mirisnim notama limuna i bergamota, dok se u srcu parfema nalaze mirisi cveta pomorandže i jasmina.', 5, 11);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Gel za telo sa zlatnim česticama 100ml', 450, 45 , 'Gel za telo sa zlatnim česticama namenjen za negu i hidrataciju kože. Formula veoma prijatnog mirisa se lako i brzo apsorbuje, ostavljajući kožu glatkom. Sadrži hijaluronsku kiselinu koja dubinski hidrira kožu, dajući joj čvrstinu i elastičnost.', 5, 12);
+INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId)  
+VALUES('Ulje za negu lica, tela i kose Kokos 100ml', 820, 90 , 'Organsko i 100% prirodno ulje od kokosa bogato vitaminima A i E, predstavlja snažan antioksidant koji štiti kožu od oštećenja i čini je sjanom. Može se koristiti kao maska za kosu, ili losion za lice i telo. Formula bez parabena, silikona i parafina.', 5, 13);
+
+
+
+
+
+
+
+
+
