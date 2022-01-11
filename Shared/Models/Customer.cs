@@ -15,12 +15,12 @@ namespace Shared.Models
         public string City { get; set; }
         public string Phone { get; set; }
         public string Email { get; set; }
-        public string Username { get; set; }
+        public string PostCode { get; set; }
         public string Password { get; set; }
 
         public Customer() { }
 
-        public Customer(int customerId, string name, string surname, string address, string city, string phone, string email, string username, string password)
+        public Customer(int customerId, string name, string surname, string address, string city, string phone, string email, string postCode, string password)
         {
             CustomerId = customerId;
             Name = name;
@@ -29,7 +29,7 @@ namespace Shared.Models
             City = city;
             Phone = phone;
             Email = email;
-            Username = username;
+            PostCode = postCode;
             Password = password;
         }
     }
