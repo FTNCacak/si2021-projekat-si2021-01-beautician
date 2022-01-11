@@ -1,7 +1,7 @@
 ﻿/* Move down content because we have a fixed navbar that is 50px tall */
 body {
-    padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #FBF5E0;
 }
 
 /* Wrapping element */
@@ -10,6 +10,26 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
+.navbar {
+    background: #d66eaf !important;
+}
+.nav-link {
+    color: white !important;
+    font-size: 1.2em !important;
+}
+#carouselExampleIndicators {
+    margin-top: 50px;
+}
+
+.carousel-item img{
+    width: 100%;
+    height: 500px;
+}
+
+
+.navbar .navbar-brand img {
+    height: 100%;
+}
 
 /* Set widths on the form inputs since otherwise they're 100% wide */
 input,
@@ -17,7 +37,9 @@ select,
 textarea {
     max-width: 280px;
 }
-
+footer {
+   margin-top: 50px;
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -27,5 +49,15 @@ textarea {
 
     .body-content {
         padding: 0;
+    }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+   
+    .carousel-item img {
+        width: 100%;
+        height: 300px;
     }
 }

@@ -20,6 +20,7 @@ CREATE TABLE [dbo].[Products]
     [Price] DECIMAL NOT NULL, 
     [Amount] INT NOT NULL, 
     [Description] NVARCHAR(500) NOT NULL, 
+    [Image] NVARCHAR(100) NULL,
     [CategoryId] INT NOT NULL, 
     [ManufacturerId] INT NOT NULL
     CONSTRAINT fk_category FOREIGN KEY (CategoryId) REFERENCES Categories(CategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
@@ -36,7 +37,7 @@ CREATE TABLE [dbo].[Customers]
     [City] NVARCHAR(30) NOT NULL, 
     [Phone] NVARCHAR(15) NULL, 
     [Email] NVARCHAR(50) NOT NULL, 
-    [Username] NVARCHAR(30) NOT NULL, 
+    [PostCode] NVARCHAR(10) NOT NULL, 
     [Password] NVARCHAR(30) NOT NULL
 )
 
