@@ -59,9 +59,15 @@
     <Compile Include="Interfaces\IAdminBusiness.cs" />
     <Compile Include="Interfaces\IAdminRepository.cs" />
     <Compile Include="Interfaces\ICategoryRepository.cs" />
+    <Compile Include="Interfaces\ICustomerBusiness.cs" />
+    <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IManufacturerBusiness.cs" />
     <Compile Include="Interfaces\IManufacturerRepository.cs" />
     <Compile Include="Interfaces\ICategoryBusiness.cs" />
+    <Compile Include="Interfaces\IOrderBusiness.cs" />
+    <Compile Include="Interfaces\IOrderItemBusiness.cs" />
+    <Compile Include="Interfaces\IOrderItemRepository.cs" />
+    <Compile Include="Interfaces\IOrderRepository.cs" />
     <Compile Include="Interfaces\IProductBusiness.cs" />
     <Compile Include="Interfaces\IProductRepository.cs" />
     <Compile Include="Models\Admin.cs" />

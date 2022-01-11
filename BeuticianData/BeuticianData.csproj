@@ -59,7 +59,10 @@
     <Compile Include="AdminRepository.cs" />
     <Compile Include="CategoryRepository.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="CustomerRepository.cs" />
     <Compile Include="ManufacturerRepository.cs" />
+    <Compile Include="OrderItemRepository.cs" />
+    <Compile Include="OrderRepository.cs" />
     <Compile Include="ProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

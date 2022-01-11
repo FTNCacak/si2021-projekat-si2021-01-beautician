@@ -58,7 +58,10 @@
   <ItemGroup>
     <Compile Include="AdminBusiness.cs" />
     <Compile Include="CategoryBusiness.cs" />
+    <Compile Include="CustomerBusiness.cs" />
     <Compile Include="ManufacturerBusiness.cs" />
+    <Compile Include="OrderBusiness.cs" />
+    <Compile Include="OrderItemBusiness.cs" />
     <Compile Include="ProductBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
