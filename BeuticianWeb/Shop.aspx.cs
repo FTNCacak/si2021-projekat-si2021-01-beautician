@@ -9,13 +9,19 @@ using Shared.Interfaces;
 
 namespace BeuticianWeb
 {
-    public partial class _Default : Page
+    public partial class About : Page
     {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            List<Product> products = productBusiness.GetProducts();
+            FillPanel(products);
+        }
+
         private readonly ICustomerBusiness customerBusiness;
         private readonly IOrderItemBusiness orderItemBusiness;
         private readonly IOrderBusiness orderBusiness;
         private readonly IProductBusiness productBusiness;
-        public _Default(ICustomerBusiness customerBusiness, IOrderItemBusiness orderItemBusiness, IOrderBusiness orderBusiness, IProductBusiness productBusiness)
+        public About(ICustomerBusiness customerBusiness, IOrderItemBusiness orderItemBusiness, IOrderBusiness orderBusiness, IProductBusiness productBusiness)
         {
 
             this.customerBusiness = customerBusiness;
@@ -24,28 +30,24 @@ namespace BeuticianWeb
             this.productBusiness = productBusiness;
         }
 
-        protected void Page_Load(object sender, EventArgs e)
-        {
-            FillPanel();
-        }
 
-        private void FillPanel()
+
+        private void FillPanel(List<Product> products)
         {
 
-            List<Product> products = productBusiness.GetProducts();
-
+       
             int count = products.Count;
 
             int numberOfRows = count / 3;
 
 
 
-          
+
 
             int temp = 0;
             if (products != null)
             {
-                for (int i = 0; i < 2; i++)
+                for (int i = 0; i < numberOfRows; i++)
                 {
                     temp = 0;
                     Panel panelRow = new Panel();
@@ -96,7 +98,7 @@ namespace BeuticianWeb
 
                         panelRow.Controls.Add(panel);
 
-                       
+
                         temp++;
                     }
                     products.RemoveRange(0, temp);

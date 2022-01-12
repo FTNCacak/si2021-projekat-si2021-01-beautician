@@ -28,9 +28,12 @@ body {
   
 }
 
-card-image-top {
+.logout-style {
+    margin-top: 30px !important;
+}
 
-    width:100% !important;
+card-image-top {
+    width: 100% !important;
 }
 
 .card-heading {

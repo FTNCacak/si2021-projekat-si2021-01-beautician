@@ -48,14 +48,20 @@
                 <div class="navbar-nav">
 
                     <a class="nav-item nav-link" runat="server" href="~/">POČETNA</a>
-                    <a class="nav-item nav-link" runat="server" href="~/About">PRODAVNICA</a>
+                    <a class="nav-item nav-link" runat="server" href="Shop.aspx">PRODAVNICA</a>
                 </div>
                 <div class="navbar-nav ml-auto">
 
-                     <a class="nav-item nav-link" runat="server" href="~/Login">PRIJAVITE SE</a>
+                     <a  ID="linkcart" class="nav-item nav-link" runat="server" href="Cart.aspx">
+                         <img src="Images/cart-icon.png" alt="Alternate Text" style="height:70px;width:90px;"/></a>
+                     <a ID="linklogin" class="nav-item nav-link" runat="server" href="~/Login">Prijava </a>
+                      <a ID="linkregister" class="nav-item nav-link" runat="server" href="Register.aspx">Registracija</a>
+                  
+                    <asp:LinkButton  ID="LinkLogout" Style="margin-top:20px" OnClick="LinkLogout_Click" class="nav-item nav-link logout-style" runat="server">Odjava</asp:LinkButton>
                 </div>
             </div>
         </div>
+
 
 
 

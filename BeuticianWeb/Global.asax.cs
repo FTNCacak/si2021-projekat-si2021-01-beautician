@@ -28,12 +28,16 @@ namespace BeuticianWeb
             container.RegisterType<IOrderRepository, OrderRepository>();
             container.RegisterType<IOrderItemRepository, OrderItemRepository>();
             container.RegisterType<IProductRepository, ProductRepository>();
+            container.RegisterType<ICategoryRepository, CategoryRepository>();
+            container.RegisterType<IManufacturerRepository, ManufacturerRepository>();
 
 
             container.RegisterType<ICustomerBusiness, CustomerBusiness>();
             container.RegisterType<IOrderBusiness, OrderBusiness>();
             container.RegisterType<IOrderItemBusiness, OrderItemBusiness>();
             container.RegisterType<IProductBusiness, ProductBusiness>();
+            container.RegisterType<ICategoryBusiness, CategoryBusiness>();
+            container.RegisterType<IManufacturerBusiness, ManufacturerBusiness>();
 
 
         }

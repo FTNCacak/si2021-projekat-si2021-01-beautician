@@ -15,6 +15,24 @@ namespace BeuticianWeb
     {
 
         /// <summary>
+        /// LabelEmpty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelEmpty;
+
+        /// <summary>
+        /// LabelLoginError control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelLoginError;
+
+        /// <summary>
         /// TextBoxLoginEmail control.
         /// </summary>
         /// <remarks>

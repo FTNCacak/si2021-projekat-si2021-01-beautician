@@ -28,7 +28,7 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-
-    <asp:Panel ID="PanelProduct" runat="server" CssClass="container"></asp:Panel>
+    <h3 style="padding: 30px 0 30px 0;">Deo ponude iz prodavnice:</h3>
+    <asp:Panel ID="PanelProducts" runat="server" CssClass="container"></asp:Panel>
 
 </asp:Content>

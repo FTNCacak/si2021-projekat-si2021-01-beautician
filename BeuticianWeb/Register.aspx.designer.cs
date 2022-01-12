@@ -15,6 +15,24 @@ namespace BeuticianWeb
     {
 
         /// <summary>
+        /// LabelErrorEmpty control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorEmpty;
+
+        /// <summary>
+        /// LabelErrorCustomerExists control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorCustomerExists;
+
+        /// <summary>
         /// TextBoxName control.
         /// </summary>
         /// <remarks>
@@ -69,6 +87,15 @@ namespace BeuticianWeb
         protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
 
         /// <summary>
+        /// LabelErrorEmail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorEmail;
+
+        /// <summary>
         /// TextBoxPhone control.
         /// </summary>
         /// <remarks>
@@ -87,6 +114,15 @@ namespace BeuticianWeb
         protected global::System.Web.UI.WebControls.TextBox TextBoxPassword;
 
         /// <summary>
+        /// LabelErrorPassword control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LabelErrorPassword;
+
+        /// <summary>
         /// TextBoxConfirmPassword control.
         /// </summary>
         /// <remarks>
@@ -96,13 +132,22 @@ namespace BeuticianWeb
         protected global::System.Web.UI.WebControls.TextBox TextBoxConfirmPassword;
 
         /// <summary>
-        /// Button1 control.
+        /// LabelErrorConfirmPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Label LabelErrorConfirmPassword;
+
+        /// <summary>
+        /// ButtonRegister control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button ButtonRegister;
 
         /// <summary>
         /// Label2 control.
