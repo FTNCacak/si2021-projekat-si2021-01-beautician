@@ -49,6 +49,9 @@
     <Reference Include="AspNet.ScriptManager.bootstrap, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\AspNet.ScriptManager.bootstrap.4.0.0\lib\net45\AspNet.ScriptManager.bootstrap.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.WebFormsDependencyInjection.Unity, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebFormsDependencyInjection.Unity.1.0.0\lib\Net472\Microsoft.AspNet.WebFormsDependencyInjection.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -100,6 +103,12 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.Abstractions, Version=3.3.0.0, Culture=neutral, PublicKeyToken=6d32ff45e0ccc69f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Abstractions.3.3.0\lib\net47\Unity.Abstractions.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Container, Version=5.8.6.0, Culture=neutral, PublicKeyToken=489b6accfaf20ef0, processorArchitecture=MSIL">
+      <HintPath>..\packages\Unity.Container.5.8.6\lib\net47\Unity.Container.dll</HintPath>
+    </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
       <HintPath>..\packages\WebGrease.1.6.0\lib\WebGrease.dll</HintPath>
@@ -137,7 +146,23 @@
     <Content Include="Images\banner-image-1.jpg" />
     <Content Include="Images\banner-image-2.jpg" />
     <Content Include="Images\banner-image-3.png" />
+    <Content Include="Images\cart-icon.png" />
+    <Content Include="Images\kosa-1.jpg" />
+    <Content Include="Images\kosa-2.jpg" />
+    <Content Include="Images\kosa-3.jpg" />
+    <Content Include="Images\lice-1.jpg" />
+    <Content Include="Images\lice-2.jpg" />
+    <Content Include="Images\lice-3.jpg" />
     <Content Include="Images\logo2.png" />
+    <Content Include="Images\nokti-1.jpeg" />
+    <Content Include="Images\nokti-2.jpg" />
+    <Content Include="Images\nokti-3.jpg" />
+    <Content Include="Images\sminka-1.jpeg" />
+    <Content Include="Images\sminka-2.jpg" />
+    <Content Include="Images\sminka-3.jpeg" />
+    <Content Include="Images\telo-1.jpg" />
+    <Content Include="Images\telo-2.jpg" />
+    <Content Include="Images\telo-3.jpg" />
     <Content Include="Login.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
@@ -295,6 +320,20 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BeuticianBusiness\BeuticianBusiness.csproj">
+      <Project>{ab72440d-ff02-426f-b258-7f406d906964}</Project>
+      <Name>BeuticianBusiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BeuticianData\BeuticianData.csproj">
+      <Project>{20cca0ed-980f-4315-b64f-6902baec1e26}</Project>
+      <Name>BeuticianData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{c2de4bd0-60af-40ff-a950-0b9c51d21e63}</Project>
+      <Name>Shared</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

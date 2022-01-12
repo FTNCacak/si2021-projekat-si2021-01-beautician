@@ -8,7 +8,7 @@ using Shared.Interfaces;
 
 namespace BeuticianBusiness
 {
-    public class OrderBusiness
+    public class OrderBusiness : IOrderBusiness
     {
         private readonly IOrderRepository orderRepository;
 

@@ -29,4 +29,6 @@
   </a>
 </div>
 
+    <asp:Panel ID="PanelProduct" runat="server" CssClass="container"></asp:Panel>
+
 </asp:Content>

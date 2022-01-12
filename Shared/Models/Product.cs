@@ -16,6 +16,9 @@ namespace Shared.Models
         public int CategoryId { get; set; }
         public int ManufacturerId { get; set; }
 
+        public string Image { get; set; }
+
+
         public Product() { }
 
         public Product(int productId, string name, decimal price, int amount, string description, int categoryId, int manufacturerId)
@@ -27,6 +30,19 @@ namespace Shared.Models
             Description = description;
             CategoryId = categoryId;
             ManufacturerId = manufacturerId;
+        
+        }
+
+        public Product(int productId, string name, decimal price, int amount, string description, int categoryId, int manufacturerId, string image)
+        {
+            ProductId = productId;
+            Name = name;
+            Price = price;
+            Amount = amount;
+            Description = description;
+            CategoryId = categoryId;
+            ManufacturerId = manufacturerId;
+            Image = image;
         }
     }
 }

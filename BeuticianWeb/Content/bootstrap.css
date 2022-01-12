@@ -5879,6 +5879,8 @@ button.close {
 .carousel-item-next,
 .carousel-item-prev {
   display: block;
+    top: 31px;
+    left: -31px;
 }
 
 .carousel-item-next,

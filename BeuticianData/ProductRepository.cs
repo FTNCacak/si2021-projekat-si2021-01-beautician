@@ -110,9 +110,10 @@ namespace BeuticianData
                     string Description = sqlDataReader.GetString(4);
                     int CategoryId = sqlDataReader.GetInt32(5);
                     int ManufacturerId = sqlDataReader.GetInt32(6);
+                    string Image = sqlDataReader.GetString(7);
 
 
-                    Product product = new Product(ProductId, Name, Price, Amount, Description, CategoryId, ManufacturerId);
+                    Product product = new Product(ProductId, Name, Price, Amount, Description, CategoryId, ManufacturerId, Image);
 
                     products.Add(product);
                 }
