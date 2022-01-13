@@ -52,8 +52,8 @@
                 </div>
                 <div class="navbar-nav ml-auto">
 
-                     <a  ID="linkcart" class="nav-item nav-link" runat="server" href="Cart.aspx">
-                         <img src="Images/cart-icon.png" alt="Alternate Text" style="height:70px;width:90px;"/></a>
+                      <asp:LinkButton  ID="linkcart"   PostBackUrl="~/Cart.aspx" class="nav-item nav-link" runat="server"> <img src="Images/cart-icon.png" alt="Alternate Text" style="height:70px;width:90px;"/></asp:LinkButton>
+
                      <a ID="linklogin" class="nav-item nav-link" runat="server" href="~/Login">Prijava </a>
                       <a ID="linkregister" class="nav-item nav-link" runat="server" href="Register.aspx">Registracija</a>
                   

@@ -11,11 +11,14 @@ namespace BeuticianWeb
 {
     public partial class Login : System.Web.UI.Page
     {
-        private readonly ICustomerBusiness customerBusiness;
-      
-        public Login(ICustomerBusiness customerBusiness)
-        {
 
+        private readonly ICustomerBusiness customerBusiness;
+
+        private readonly IProductBusiness productBusiness;
+
+        public Login(ICustomerBusiness customerBusiness, IProductBusiness productBusiness)
+        {
+            this.productBusiness = productBusiness;
             this.customerBusiness = customerBusiness;
         }
         protected void Page_Load(object sender, EventArgs e)
@@ -43,11 +46,13 @@ namespace BeuticianWeb
             else
             {
                 Customer customer = GetCustomer(email, password);
+                List<Product> cartProducts = new List<Product>();
+
 
                 Session["User"] = customer;
-
+                Session["Cart"] = cartProducts;
                 Response.Redirect("~/Default");
-            
+
             }
 
         }
@@ -64,7 +69,7 @@ namespace BeuticianWeb
             }
 
             return customer;
-        
+
         }
     }
 }

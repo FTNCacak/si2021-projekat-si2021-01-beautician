@@ -4,5 +4,5 @@
   
      <asp:Panel ID="PanelProducts" Style="margin-top:50px" runat="server" CssClass="container"></asp:Panel>
 
-
+     <asp:Panel ID="Panel1" Style="margin-top:50px" runat="server" CssClass="container"></asp:Panel>
 </asp:Content>

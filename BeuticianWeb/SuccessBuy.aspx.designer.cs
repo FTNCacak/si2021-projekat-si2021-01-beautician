@@ -11,17 +11,17 @@ namespace BeuticianWeb
 {
 
 
-    public partial class Cart
+    public partial class SuccessBuy
     {
 
         /// <summary>
-        /// PanelEmpty control.
+        /// Panel1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelEmpty;
+        protected global::System.Web.UI.WebControls.Panel Panel1;
 
         /// <summary>
         /// Panel2 control.
@@ -31,14 +31,5 @@ namespace BeuticianWeb
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Panel Panel2;
-
-        /// <summary>
-        /// PanelProducts control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Panel PanelProducts;
     }
 }

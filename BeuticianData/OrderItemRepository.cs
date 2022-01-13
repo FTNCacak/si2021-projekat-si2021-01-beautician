@@ -24,7 +24,7 @@ namespace BeuticianData
 
                 sqlCommand.Connection = sqlConnection;
 
-                sqlCommand.CommandText = "INSERT INTO OrderItems(ProductId, OrderId, Quantity) VALUES(@ProductId, @OrderId, @Quantity);";
+                sqlCommand.CommandText = "INSERT INTO Order_Items(ProductId, OrderId, Quantity) VALUES(@ProductId, @OrderId, @Quantity);";
                 sqlCommand.Parameters.AddWithValue("@ProductId", orderItem.ProductId);
                 sqlCommand.Parameters.AddWithValue("@OrderId", orderItem.OrderId);
                 sqlCommand.Parameters.AddWithValue("@Quantity", orderItem.Quantity);

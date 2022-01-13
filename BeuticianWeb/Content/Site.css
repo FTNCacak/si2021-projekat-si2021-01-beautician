@@ -22,14 +22,42 @@ body {
     margin-bottom: 50px;
 }
 
+.panel-button {
+    margin-top: 10px;
+    height: 50px;
+    bottom: 0;
+    position: absolute;
+    align-self: end;
+    text-align: center;
+    top: 0;
+    right: 10px;
+}
+
+.content-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .carousel-item img{
   
   height: 570px;
-  
+}
+.rowStyle{
+    background-color: #fff !important;
 }
 
 .logout-style {
     margin-top: 30px !important;
+}
+
+.btn-cart-style {
+    background-image: url("../Images/cart-icon-green.png");
+    background-color: #fff;
+    border: none;
+    background-size: contain;
+    width:50px;
+    height:50px;
+    float: right;
 }
 
 card-image-top {

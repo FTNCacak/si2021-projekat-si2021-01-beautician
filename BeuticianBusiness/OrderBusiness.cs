@@ -31,12 +31,14 @@ namespace BeuticianBusiness
         {
             Order order = new Order();
 
-            List<Order> orders = GetOrders();
+            List<Order> orders = orderRepository.GetOrders();
 
             foreach (Order item in orders)
             {
-                if (item.CustomerId == CustomerId && item.Date == date)
-                    order = item;
+                if (item.CustomerId == CustomerId && (item.Date.ToString() == date.ToString()))
+                {
+                    return item;
+                }
             }
 
 

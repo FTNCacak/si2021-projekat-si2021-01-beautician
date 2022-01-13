@@ -56,7 +56,7 @@ namespace BeuticianData
                     int OrderId = sqlDataReader.GetInt32(0);
                     int CustomerId = sqlDataReader.GetInt32(1);
 
-                    DateTime Date = sqlDataReader.GetDateTime(2); ;
+                    DateTime Date = sqlDataReader.GetDateTime(2);
 
                     Order order = new Order(OrderId, CustomerId, Date);
 
