@@ -22,13 +22,15 @@ namespace BeuticianData
 
                 sqlCommand.Connection = sqlConnection;
 
-                sqlCommand.CommandText = "INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId) VALUES(@Name, @Price, @Amount, @Description, @CategoryId, @ManufacturerId);";
+                sqlCommand.CommandText = "INSERT INTO Products(Name, Price, Amount, Description, CategoryId, ManufacturerId, Image) VALUES(@Name, @Price, @Amount, @Description, @CategoryId, @ManufacturerId, @Image);";
                 sqlCommand.Parameters.AddWithValue("@Name", product.Name);
                 sqlCommand.Parameters.AddWithValue("@Price", product.Price);
                 sqlCommand.Parameters.AddWithValue("@Amount", product.Amount);
                 sqlCommand.Parameters.AddWithValue("@Description", product.Description);
                 sqlCommand.Parameters.AddWithValue("@CategoryId", product.CategoryId);
                 sqlCommand.Parameters.AddWithValue("@ManufacturerId", product.ManufacturerId);
+                sqlCommand.Parameters.AddWithValue("@Image", "default.jpg");
+
 
                 sqlCommand.ExecuteNonQuery();
 

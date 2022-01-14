@@ -132,6 +132,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Images\cart-icon-green.png" />
+    <Content Include="Images\default.jpg" />
     <Content Include="Scripts\main.js" />
     <Content Include="Shop.aspx" />
     <Content Include="Cart.aspx" />
