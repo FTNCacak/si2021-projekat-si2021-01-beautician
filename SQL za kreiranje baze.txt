@@ -1,0 +1,71 @@
+CREATE TABLE [dbo].[Categories]
+( 
+    [CategoryId] INT NOT NULL PRIMARY KEY IDENTITY(1, 1), 
+    [Name] NVARCHAR(50) NOT NULL, 
+    [Description] NVARCHAR(100) NOT NULL
+)
+
+
+CREATE TABLE [dbo].[Manufacturers]
+(
+    [ManufacturerId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Name] NVARCHAR(50) NOT NULL,
+)
+
+
+CREATE TABLE [dbo].[Products]
+(
+    [ProductId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Name] NVARCHAR(100) NOT NULL, 
+    [Price] DECIMAL NOT NULL, 
+    [Amount] INT NOT NULL, 
+    [Description] NVARCHAR(500) NOT NULL, 
+    [Image] NVARCHAR(100) NULL,
+    [CategoryId] INT NOT NULL, 
+    [ManufacturerId] INT NOT NULL
+    CONSTRAINT fk_category FOREIGN KEY (CategoryId) REFERENCES Categories(CategoryId) ON DELETE CASCADE ON UPDATE CASCADE,
+    CONSTRAINT fk_manufacturer FOREIGN KEY (ManufacturerId) REFERENCES Manufacturers(ManufacturerId) ON DELETE CASCADE ON UPDATE CASCADE
+
+)
+
+CREATE TABLE [dbo].[Customers]
+(
+    [CustomerId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Name] NVARCHAR(30) NOT NULL, 
+    [Surname] NVARCHAR(30) NOT NULL, 
+    [Address] NVARCHAR(50) NOT NULL, 
+    [City] NVARCHAR(30) NOT NULL, 
+    [Phone] NVARCHAR(15) NULL, 
+    [Email] NVARCHAR(50) NOT NULL, 
+    [PostCode] NVARCHAR(10) NOT NULL, 
+    [Password] NVARCHAR(30) NOT NULL
+)
+
+CREATE TABLE [dbo].[Orders]
+(
+    [OrderId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [CustomerId] INT NOT NULL, 
+    [Date] DATETIME NOT NULL
+    CONSTRAINT fk_customer FOREIGN KEY (CustomerId) REFERENCES Customers(CustomerId)
+) 
+
+CREATE TABLE [dbo].[Order_Items]
+(
+    [ProductId] INT NOT NULL,
+    [OrderId] INT NOT NULL, 
+    [Quantity] INT NOT NULL,
+    CONSTRAINT pk_order_items PRIMARY KEY (ProductId, OrderId),
+    CONSTRAINT fk_product FOREIGN KEY(ProductId) REFERENCES Products(ProductId),
+    CONSTRAINT fk_order FOREIGN KEY(OrderId) REFERENCES Orders (OrderId)
+)
+
+CREATE TABLE [dbo].[Admins]
+(
+    [AdminId] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [Name] NVARCHAR(30) NOT NULL, 
+    [Surname] NVARCHAR(30) NOT NULL, 
+    [Username] NVARCHAR(30) NOT NULL, 
+    [Password] NVARCHAR(30) NOT NULL
+)
+
+

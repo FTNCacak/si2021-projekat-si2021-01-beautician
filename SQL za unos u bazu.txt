@@ -1,0 +1,44 @@
+INSERT INTO Categories(Name, Description) VALUES('Nega kose', 'Preparati namenjeni za negu kose.');
+INSERT INTO Categories(Name, Description) VALUES('Nega lica', 'Preparati namenjeni za negu lica.');
+INSERT INTO Categories(Name, Description) VALUES('Nega noktiju', 'Preparati namenjeni za negu noktiju.');
+INSERT INTO Categories(Name, Description) VALUES('Šminka', 'Preparati namenjeni za šminkanje.');
+INSERT INTO Categories(Name, Description) VALUES('Nega tela', 'Preparati namenjeni za negu tela.');
+
+
+INSERT INTO Manufacturers(Name) VALUES('L''Oreal Paris');
+INSERT INTO Manufacturers(Name) VALUES('Garnier');
+INSERT INTO Manufacturers(Name) VALUES('Keune');
+INSERT INTO Manufacturers(Name) VALUES('Revolution skincare London');
+INSERT INTO Manufacturers(Name) VALUES('CALA');
+INSERT INTO Manufacturers(Name) VALUES('Bielenda');
+INSERT INTO Manufacturers(Name) VALUES('Galaxy');
+INSERT INTO Manufacturers(Name) VALUES('Dieffetti');
+INSERT INTO Manufacturers(Name) VALUES('NYX Professional Makeup ');
+INSERT INTO Manufacturers(Name) VALUES('I heart revolution');
+INSERT INTO Manufacturers(Name) VALUES('Women''s Secret');
+INSERT INTO Manufacturers(Name) VALUES('Spa Natural');
+INSERT INTO Manufacturers(Name) VALUES('Lovea');
+
+
+
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Dnevna krema Protecting Boost 50ml', CAST(1090 AS Decimal(18, 0)), 100, N'Protecting Boost kolekcija za dnevnu negu i hidrataciju kože lica sa zaštitnim faktorom. Krema je obogacena niacinamidom koji reguliše lucenje sebuma i ujednacava teksturu kože lica.', 2, 4, N'lice-1.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Sheet maska za negu i umirivanje lica sa esencijom Aloe Vera 23g', CAST(176 AS Decimal(18, 0)), 200, N'Cala sheet maska za lice obogacena ekstraktom aloje, vitaminima i aminokiselinama, neguje i umiruje kožu lica, održavajuci njen prirodni balans.', 2, 5, N'lice-2.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Micelarna voda za detoksikaciju i cišcenje kože lica Fresh Juice Lime 100ml', CAST(260 AS Decimal(18, 0)), 300, N'Micelarna voda sa bioaktivnom citrusnom vodom dobijenom iz mediteranskog voca, sokom od limete i salicilnom kiselinom.', 2, 6, N'lice-3.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Lak za nokte 12ml - Choco Latte', CAST(250 AS Decimal(18, 0)), 120, N'Galaxy lakovi za nokte bazirani su na visokopigmentovanoj formuli i pružaju dugotrajnu boju. Dostupni su u raskošnoj paleti boja, od nežnih pastelnih, preko intenzivnih narandžastih i zavodljivih crvenih, pa sve do romanticnih ljubicastih tonova, kao i razlicitih neon, holografskih, gliter, metalik i šimer nijansi.', 3, 7, N'nokti-1.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Turpija za nokte GLX303 Masterclass 150/150', CAST(135 AS Decimal(18, 0)), 180, N'Turpija Masterclass 150/150 za matiranje i oblikovanje nokta, izradena od sundera i abraziva. Sam dizajn mekane sunder turpije cuva strukturu prirodnog nokta.', 3, 7, N'nokti-2.jpg')
+INSERT INTO [dbo].[Products] ([Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Skidac laka sa acetonom 250ml', CAST(335 AS Decimal(18, 0)), 150, N'Formula za efikasno, brzo i jednostavno uklanjanje laka sa acetonom. Pogodan za primenu kako na prirodnim tako i na nadogradenim noktima.', 3, 8, N'nokti-3.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Karmin za usne Butter Lipstick BLS 4.5g', CAST(750 AS Decimal(18, 0)), 85, N'Butter ruževi za usne u visokopigmentisanim nijansama imaju hidratantnu i laganu formulu koja neguje usne. U samo jednom potezu i bez lepljivog ostatka moguce je postici zavodljiv izgled usana koji se uklapa u svaki makeup.', 4, 9, N'sminka-1.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Paleta presovanih pigmenata za oci Tasty Coffee 22g', CAST(1390 AS Decimal(18, 0)), 50, N'Tasty Coffee paleta presovanih pigmenata za oci inspirisana bojama i ukusima razlicitih vrsta kafe, sastavljena od 18 nijansi, 10 mat i 8 šimer finiša. U kombinaciji krem, cokoladnih i bronzanih tonova, pogodna je za kreiranje dnevnog izgleda u toplim zemljanim bojama, ali i za postizanje intezivnijeg izgleda tamnijih nijansi.', 4, 10, N'sminka-2.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Vodootporna maskara Worth the Hype Waterproof 7ml', CAST(1060 AS Decimal(18, 0)), 85, N'Maskara za kreiranje dodatnog volumena i dužine trepavica. Vodootporna formula u intenzivno crnoj boji je ugodna za nošenje i lako se nadograduje. Rezultat je vizuelno gušci i duži izgled trepavica, za dugotrajan efekat. Maskara je otporna na razmazivanje i ne rasipa se.', 4, 9, N'smika-3.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Eau Its Fresh Edt ženski parfem, 100ml', CAST(2290 AS Decimal(18, 0)), 65, N'Women''s Secret Eau Its Fresh Edt predstavlja novi parfem iz Womens Secret kolekcije parfema, koji se otvara mirisnim notama limuna i bergamota, dok se u srcu parfema nalaze mirisi cveta pomorandže i jasmina.', 5, 11, N'telo-1.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Gel za telo sa zlatnim cesticama 100ml', CAST(450 AS Decimal(18, 0)), 45, N'Gel za telo sa zlatnim cesticama namenjen za negu i hidrataciju kože. Formula veoma prijatnog mirisa se lako i brzo apsorbuje, ostavljajuci kožu glatkom. Sadrži hijaluronsku kiselinu koja dubinski hidrira kožu, dajuci joj cvrstinu i elasticnost.', 5, 12, N'telo-2.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Ulje za negu lica, tela i kose Kokos 100ml', CAST(820 AS Decimal(18, 0)), 90, N'Organsko i 100% prirodno ulje od kokosa bogato vitaminima A i E, predstavlja snažan antioksidant koji štiti kožu od oštecenja i cini je sjanom. Može se koristiti kao maska za kosu, ili losion za lice i telo. Formula bez parabena, silikona i parafina.', 5, 13, N'telo-3.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Casting Creme Gloss Boja za kosu', CAST(500 AS Decimal(18, 0)), 50, N'Casting Creme Gloss vam pruža optimalnu pokrivenost sedih vlasi i izuzetno sjajne odsjaje. Bogata nijansama, ona ponovo stvara blistavu boju, sa sjajnim i vidljivim odsjajima, za jako prirodan i dugotrajan rezultat.', 1, 1, N'kosa-1.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Botanic Therapy Coco & Macadamia šampon 400 ml', CAST(450 AS Decimal(18, 0)), 40, N'Linija obogacena kokosovim mlekom i uljem makadamije hrani kosu i cini je mekom, bez otežavanja. Rezultat je kosa intenzivno nahranjena, sjajna, meka na dodir i izgleda zdravo.', 1, 2, N'kosa-2.jpg')
+INSERT INTO [dbo].[Products] ( [Name], [Price], [Amount], [Description], [CategoryId], [ManufacturerId], [Image]) VALUES ( N'Care Vital Nutrition regenerator za kosu 250ml', CAST(580 AS Decimal(18, 0)), 55, N'Regenerator za kosu koja treba dodatnu negu. Aktivni sastojci hidratizuju unutrašnju strukturu dlake formirajuci sloj oko oštecenih delova dlake. Kosa postaje glatka,mekana i sjajna.', 1, 3, N'kosa-3.jpg')
+
+
+
+
+
+
